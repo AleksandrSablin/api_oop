@@ -1,4 +1,5 @@
-import os
+from decouple import config
 
-value = os.environ.get('API_Key_course')
+database_url = config('https://apilayer.com/marketplace/exchangerates_data-api')
+api_key = config('API_Key_course')
 
